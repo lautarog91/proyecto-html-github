@@ -1,0 +1,14 @@
+/*general a todo el proyecto(el reset, grilla, clases que se usaron mucho)*/ 
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    .ejercicios-grid-contenedor{width: 100%; display: grid;grid-template-columns:repeat(3,1fr);grid-template-rows: auto;
+        grid-template-areas:
+        "cuerpo cuerpo aside"
+        ;}
+
+        .grid-kick{width: 100%;
+            display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: auto;
+            grid-template-areas:
+            "combinaciones combinaciones aside-kick";
+        }

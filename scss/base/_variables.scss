@@ -1,0 +1,11 @@
+$font-size :33px,
+            32px,
+            30px,
+            20px,
+            18px;    
+
+%flex-subtitulo{ display: flex;justify-content: space-between;}
+
+%flex-h2yp{display: flex;flex-direction: column;justify-content: space-around;}
+
+%flex-divcolumn{display: flex;flex-direction: column;justify-content: center;align-items: center;}
