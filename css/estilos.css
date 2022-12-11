@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: space-around; }
 
-.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones, .combinaciones div {
+.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +57,7 @@
   flex-direction: column;
   justify-content: space-around; }
 
-.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones, .combinaciones div {
+.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,6 +238,9 @@ body {
 .formularios .subtitulo {
   padding-left: 5px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   width: 70%;
   border: 1px solid black;
@@ -253,18 +256,26 @@ body {
   border: 1px solid black;
   padding-left: 5px;
   padding-bottom: 1px;
-  padding-right: 5px;
   margin-bottom: 0px;
   font-family: sans-serif; }
   .formularios div h2 {
-    font-size: 30px;
-    font-family: sans-serif; }
-  .formularios div textarea:focus {
-    scale: 1.01; }
-  .formularios div form div {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 5px; }
+  .formularios div textarea {
+    width: 55%;
     margin-bottom: 5px; }
-    .formularios div form div input:focus {
-      scale: 1.03; }
+    .formularios div textarea:focus {
+      scale: 1.01; }
+  .formularios div form {
+    width: 55%; }
+    .formularios div form div {
+      width: 100%;
+      margin-bottom: 5px; }
+      .formularios div form div input {
+        width: 100%; }
+        .formularios div form div input:focus {
+          scale: 1.03; }
 
 .formularios .mapa {
   margin-top: 0px;
@@ -272,6 +283,8 @@ body {
   padding-bottom: 2px; }
   .formularios .mapa h2 {
     font-size: 30px; }
+  .formularios .mapa iframe {
+    margin-bottom: 5px; }
 
 /* Pagina kick-boxing*/
 .combinaciones {
@@ -753,9 +766,9 @@ body {
 /*Pagina recetas*/
 @media screen and (max-width: 1250px) {
   .recetas div p {
-    font-size: 14px; }
+    font-size: 16px; }
   .recetas .ultimo-div p {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 @media screen and (max-width: 950px) {
   .recetas div img {
@@ -771,11 +784,11 @@ body {
 
 @media screen and (max-width: 800px) {
   .recetas .subtitulo h2 {
-    font-size: 25px; }
+    font-size: 30px; }
   .recetas div h3 {
     font-size: 20px; }
   .recetas div p {
-    font-size: 11px; }
+    font-size: 12px; }
   .recetas div img {
     width: 400px;
     height: 200px; }
@@ -785,14 +798,20 @@ body {
     width: 400px;
     height: 200px; }
   .recetas .ultimo-div p {
-    font-size: 11px; } }
+    font-size: 12px; } }
 
 @media screen and (max-width: 600px) {
+  .recetas .subtitulo h2 {
+    font-size: 20px; }
+  .recetas div h3 {
+    font-size: 33px, 32px, 30px, 20px, 18px, 16px, 14px, 12px, 10px, 5; }
   .recetas div p {
     font-size: 10px; }
   .recetas div img {
     width: 300px;
     height: 140px; }
+  .recetas .ultimo-div div h3 {
+    font-size: 18px; }
   .recetas .ultimo-div p {
     font-size: 10px; }
   .recetas .ultimo-div img {
@@ -813,11 +832,11 @@ body {
 /*Pagina contacto */
 @media screen and (max-width: 1000px) {
   .formularios div h2 {
-    font-size: 22px; }
+    font-size: 18px; }
   .formularios .mapa h2 {
-    font-size: 22px; }
+    font-size: 20px; }
   .formularios .subtitulo h2 {
-    font-size: 25px; } }
+    font-size: 30px; } }
 
 @media screen and (max-width: 900px) {
   .formularios .mapa iframe {
@@ -827,6 +846,8 @@ body {
 @media screen and (max-width: 660px) {
   .formularios div h2 {
     font-size: 16px; }
+  .formularios div textarea {
+    height: 200px; }
   .formularios .mapa h2 {
     font-size: 16px; }
   .formularios .subtitulo h2 {
@@ -836,17 +857,26 @@ body {
     height: 200px; } }
 
 @media screen and (max-width: 520px) {
+  .formularios div form {
+    width: 70%; }
+  .formularios div textarea {
+    height: 150px; }
   .formularios .mapa iframe {
     width: 275px;
     height: 170px; } }
 
 @media screen and (max-width: 420px) {
   .formularios .mapa h2 {
-    font-size: 14px; }
+    font-size: 16px; }
   .formularios .mapa iframe {
     width: 200px;
-    height: 120px; } }
+    height: 140px; }
+  .formularios div h2 {
+    font-size: 14px; }
+  .formularios div textarea {
+    height: 110px; } }
 
+/* Pagina kick-boxing*/
 .divs-centrados .subtitulo-fuerza, .divs-centrados .subtitulo-kick, .divs-centrados .subtitulo-recetas {
   display: flex;
   justify-content: space-between; }
@@ -856,7 +886,7 @@ body {
   flex-direction: column;
   justify-content: space-around; }
 
-.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones, .combinaciones div {
+.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div {
   display: flex;
   flex-direction: column;
   justify-content: center;

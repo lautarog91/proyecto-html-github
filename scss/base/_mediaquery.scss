@@ -155,39 +155,41 @@
 
 /*Pagina recetas*/
     @media screen and (max-width:1250px){
-        .recetas{ div{p{font-size: 14px;}} .ultimo-div{p{font-size: 14px;}}}
+        .recetas{ div{p{font-size: nth($font-size,6);}} .ultimo-div{p{font-size: nth($font-size,6);}}}
 }
 
 @media screen and (max-width:950px){
 
-    .recetas{div{img{width: 500px;height: 300px;}p{font-size: 12px;}} .ultimo-div{img{width: 500px;height: 300px;}p{font-size: 12px;}}}
+    .recetas{div{img{width: 500px;height: 300px;}p{font-size: nth($font-size,8);}} 
+    .ultimo-div{img{width: 500px;height: 300px;}p{font-size: nth($font-size,8);}}}
 }
 
 
 @media screen and (max-width:800px){
-.recetas{.subtitulo{h2{font-size:25px ;}}div{h3{font-size: 20px;}p{font-size: 11px;} img{ width:400px ;height: 200px; }}
+.recetas{.subtitulo{h2{font-size:nth($font-size,3) ;}}
+div{h3{font-size:nth($font-size,4);}p{font-size: nth($font-size,8);} img{ width:400px ;height: 200px; }}
 
-.ultimo-div{h3{font-size: 20px;} img{width: 400px;height: 200px;}p{font-size: 11px;}}    }
+.ultimo-div{h3{font-size:nth($font-size,4);} img{width: 400px;height: 200px;}p{font-size: nth($font-size,8);}}    }
 
 }
 
 @media screen and (max-width:600px){
 
-.recetas{div{p{font-size: 10px;}img{width: 300px;height:140px ;}}.ultimo-div{p{font-size: 10px;}img{width: 300px; height: 140px;}}}
+.recetas{.subtitulo{h2{font-size: nth($font-size,4);}} 
+div{h3{font-size:($font-size,5) ;} p{font-size: nth($font-size,9);}img{width: 300px;height:140px ;}}
+.ultimo-div{div{h3{font-size:nth($font-size,5) ;}} p{font-size:nth($font-size,9);}img{width: 300px; height: 140px;}}}
 
 .pie{a{img{width: 30px;height: 30px;}}}
-
 }
+
+
 @media screen and (max-width:500px) {
-
-
 .recetas{div{img{width: 200px;height:105px}}.ultimo-div{img{width: 200px;height: 105px;}}}
-
-
 }
+
 /*Pagina contacto */
 @media screen and (max-width:1000px){
-.formularios{div{h2{font-size:22px ; }}.mapa{h2{font-size: 22px;}} .subtitulo{h2{font-size: 25px; }}}
+.formularios{div{h2{font-size: nth($font-size,5) ; }}.mapa{h2{font-size:nth($font-size,4);}} .subtitulo{h2{font-size: nth($font-size,3); }}}
 
 
 }
@@ -197,14 +199,18 @@
 
 }
 @media screen and (max-width:660px){
-    .formularios{div{h2{font-size:16px ; }}.mapa{h2{font-size: 16px;}} .subtitulo{h2{font-size: 20px; }}}
+    .formularios{div{h2{font-size:nth($font-size,6) ; };textarea{ height:200px ;}}
+    .mapa{h2{font-size: nth($font-size,6);}}
+    .subtitulo{h2{font-size: nth($font-size,4); }}}
 
     .formularios{.mapa{iframe{width: 350px;height: 200px;}}}
 }
 @media screen and (max-width:520px){
-    .formularios{.mapa{iframe{width: 275px;height: 170px;}}} 
-}
+    .formularios{div{form{width: 70%;}  textarea{height: 150px;}} .mapa{iframe{width: 275px;height: 170px;}}}} 
+
 @media screen and (max-width:420px){
-    .formularios{.mapa{h2{font-size: 14px;}}}
-    .formularios{.mapa{iframe{width: 200px;height: 120px;}}} 
+    .formularios{.mapa{h2{font-size: nth($font-size,6);}iframe{width: 200px;height: 140px;} }
+    div{h2{font-size:nth($font-size,7) ; };textarea{ height:110px ;}} }
+    
 }
+/* Pagina kick-boxing*/
