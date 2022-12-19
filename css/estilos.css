@@ -33,6 +33,21 @@
   justify-content: center;
   align-items: center; }
 
+.divs-centrados .subtitulo-fuerza, .divs-centrados .subtitulo-kick, .divs-centrados .subtitulo-recetas {
+  display: flex;
+  justify-content: space-between; }
+
+.divs-centrados .subtitulo-fuerza .h2yp, .divs-centrados .subtitulo-kick .h2yp, .divs-centrados .subtitulo-recetas .h2yp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div, .combinaciones .ultimo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .titulo {
   width: 100%;
   height: 140px;
@@ -1015,18 +1030,3 @@ body {
     font-size: 14px; }
   .aside-kick h4 {
     font-size: 10px; } }
-
-.divs-centrados .subtitulo-fuerza, .divs-centrados .subtitulo-kick, .divs-centrados .subtitulo-recetas {
-  display: flex;
-  justify-content: space-between; }
-
-.divs-centrados .subtitulo-fuerza .h2yp, .divs-centrados .subtitulo-kick .h2yp, .divs-centrados .subtitulo-recetas .h2yp {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
-.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div, .combinaciones .ultimo-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
