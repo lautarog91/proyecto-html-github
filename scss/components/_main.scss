@@ -3,70 +3,107 @@ body{background-color:rgb(185, 185, 255);}
 /* Pagina index*/
 .descripcion{background-color: rgb(32, 32, 72);width: 100%;height:370px;border:1px solid black;
     display: flex;justify-content: space-around;align-items: center;
-    p{color: white;font-size: nth($font-size,4);}}
+    p{color: white;font-size: nth($font-size,4);}
+img{ -webkit-box-shadow: 42px 7px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 42px 7px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 42px 7px 2px 0px rgba(0,0,0,0.75); }}
 
 .divs-centrados{display:flex;flex-direction: column ; align-items: center;
 .subtitulo-fuerza{width:50% ;background-color:white;
     margin: 10px;@extend %flex-subtitulo;
-    border:1px black solid ;
+    border:1px black solid ;    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); 
     .h2yp{font-family:sans-serif ;padding:4px;
     @extend %flex-h2yp ;
     h2{font-size:nth($font-size,3);margin: 1px;};
     p{font-size:nth($font-size,5);}}
-    .img{img {border: 1px black solid;}&:hover{scale: 1.1;}} } 
+    .img{img {border: 1px black solid;}&:hover{scale: 1.1;}transition-duration:1.3s ;} } 
 
-.subtitulo-kick{ width:50%; background-color: white;margin-bottom: 10px;@extend %flex-subtitulo ;border: 1px black solid;  
+.subtitulo-kick{ width:50%; background-color: white;margin-bottom: 10px;@extend %flex-subtitulo ;border: 1px black solid;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); 
 .h2yp{padding: 4px;font-family: sans-serif;@extend %flex-h2yp;h2{font-size:nth($font-size,3);margin: 1px;} p {font-size:nth($font-size,5);}}
-.img{padding: 0px;margin: 0px ;img{margin: 0px;border:1px black solid;} &:hover{scale: 1.1;}}}
+.img{padding: 0px;margin: 0px ;img{margin: 0px;border:1px black solid;} &:hover{scale: 1.1;}transition-duration: 1.3s;}}
 
 .subtitulo-recetas{width: 50%; background-color:white;@extend %flex-subtitulo;border: 1px black solid;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); 
 .h2yp {padding: 4px;font-family:sans-serif ; @extend %flex-h2yp;h2{font-size:nth($font-size,3);margin: 1px;}p{font-size:nth($font-size,5);} }
-.img{img{border: 1px black solid;}&:hover{scale: 1.1;}} }}
+.img{img{border: 1px black solid;}&:hover{scale: 1.1;} transition-duration: 1.3s;} }}
 
 /* Pagina ejercicios */            
             .cuerpo-grid-ejercicios{grid-area: cuerpo;
-            .subtitulo {background-color: white;color: black;font-family: sans-serif;font-size:nth($font-size,1);
+            .subtitulo {background-color: white;color: black;font-family: sans-serif;h2{ font-size:nth($font-size,1);}
             border:1px solid black;padding: 2px;margin-bottom: 10px; @extend %flex-divcolumn;}
-            div{background-color: white;color: black;border:1px solid black;
+            div{background-color: white;color: black;border:1px solid black;margin-bottom: 10px;
             padding: 5px;font-family: sans-serif ;
             @extend %flex-divcolumn;
+            -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
             h3{margin-bottom: 20px;font-family: sans-serif;font-size: nth($font-size,3);}
-            p{margin-top:50px;margin-bottom: 10px;font-family: sans-serif;font-size: nth($font-size,4);&:hover{scale: 1.1;}} }
-                    
+            p{margin-top:50px;margin-bottom: 10px;margin-left: 15px;margin-right: 15px;font-family: sans-serif;font-size: nth($font-size,4);&:hover{scale: 1.04;}
+        transition-duration:1.5s ;}
+    iframe{            -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);}}
+        
             .ultimo-div{background-color: white;color: black;font-family: sans-serif;font-size: 20px;border: 1px solid black;
             margin-bottom: 0px;padding: 5px;@extend %flex-divcolumn;
+            -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
             h3{margin-bottom: 20px;font-family: sans-serif;font-size: nth($font-size,3);}
-            p{margin-top:50px;margin-bottom: 10px;font-family: sans-serif;font-size: nth($font-size,4); &:hover{scale: 1.1;}}
+            p{margin-top:50px;margin-bottom: 10px;margin-left: 15px;margin-right: 15px;font-family: sans-serif;font-size: nth($font-size,4); &:hover{scale: 1.04;}}
                 } }
 
-            .aside-grid-ejercicios{grid-area: aside; 
+            .aside-grid-ejercicios{grid-area: aside;&:hover{scale:1.05 ;};transition-duration: 1s;
             background-color: rgb(91, 91, 243);color: black;border: black solid 1px;
             height:108px;padding: 1px;position: absolute;top:544px;left:1000px;position: sticky;
+            -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
             h4{font-size:nth($font-size,4);font-family: sans-serif;} }
 /* Pagina  recetas*/
 .recetas {@extend %flex-divcolumn ; .subtitulo{background-color: white;
     color: black;width: 70%; ;border:1px solid black;margin-bottom: 10px; text-align: center;
     h2{font-size:nth($font-size,1) ;font-family: sans-serif;} }
 div{background-color: white;color: black;width: 70%; ;border:1px solid black; h3{font-size:nth($font-size,3);};
-img{margin-bottom: 5px;};margin-bottom: 10px;font-family: sans-serif;padding: 5px;@extend %flex-divcolumn ;
-p{&:hover{scale: 1.1;}}}
+img{margin-bottom: 5px;-webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); };margin-bottom: 10px;font-family: sans-serif;padding: 5px;@extend %flex-divcolumn ;
+-webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+p{&:hover{scale: 1.04;} transition-duration: 1.5s;margin-left: 15px;margin-right: 15px;}font-size: nth($font-size,6);}
 .ultimo-div{margin-bottom: 0px;padding: 5px; @extend %flex-divcolumn;h3{font-size:nth($font-size,3);} 
-img{margin-bottom: 5px;} p{ &:hover{scale: 1.1;}}}}
+img{margin-bottom: 5px;} p{ &:hover{scale: 1.04;} transition-duration: 1.5s}}}
 
 /* Pagina contacto*/
-.formularios{@extend %flex-divcolumn ;
+.formularios{@extend %flex-divcolumn ;    
     
     .subtitulo{padding-left: 5px;background-color: white;display: flex ;justify-content: center;align-items: center;
     color: black;width: 70%; ;border:1px solid black;
     margin-bottom: 10px;h2{font-size:nth($font-size,1) ;font-family: sans-serif;}} 
     div{background-color: white;color: black;width: 70%; ;border:1px solid black;padding-left: 5px;padding-bottom: 1px;
         ; margin-bottom: 0px;font-family: sans-serif;@extend %flex-divcolumn;
+        -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); 
         h2{font-size:nth($font-size,4) ;font-family: sans-serif;margin-top: 5px;}
-    textarea{width:55% ;&:focus{scale:1.01 };margin-bottom: 5px}
+    textarea{width:55% ;&:focus{scale:1.01 };margin-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);  }
     form{ @extend %flex-divcolumn;width:55%;
         div{ width:100% ;margin-bottom: 5px; input{width: 100% ;&:focus{scale: 1.03;}}}} }
     .mapa{@extend %flex-divcolumn;margin-top: 0px;margin-bottom: 0px;padding-bottom: 2px;
-    h2{font-size:nth($font-size,3) ;}iframe{margin-bottom: 5px;} }  }
+    h2{font-size:nth($font-size,3) ;}iframe{margin-bottom: 5px;    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);  } }  }
 
     
     /* Pagina kick-boxing*/
@@ -74,13 +111,23 @@ img{margin-bottom: 5px;} p{ &:hover{scale: 1.1;}}}}
     .subtitulo{background-color: white;color: black; ;border:1px solid black;@extend %flex-divcolumn;
     margin-bottom: 10px;h2{font-size: nth($font-size,1);font-family: sans-serif;} padding-left: 5px; }
     div{background-color: white;color: black; ;border:1px solid black;h3{font-size:nth($font-size,3);}
-    margin-bottom: 0px;font-family: sans-serif;padding: 5px; @extend %flex-divcolumn;padding-bottom: 5px;}
+    margin-bottom: 10px;font-family: sans-serif;padding: 5px; @extend %flex-divcolumn;padding-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); 
+ul{&:hover{scale: 1.06} transition-duration: 1.5s;margin-left: 10px;margin-right: 10px;}
+iframe{     -webkit-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0,0,0,0.75); margin-bottom: 15px}}
     
     .ultimo-div{@extend %flex-divcolumn; margin-bottom: 0px; padding-left: 5px; h3{font-size: nth($font-size,3)}padding-bottom: 5px;}
     }
 
     .aside-kick{grid-area: aside-kick; 
-    background-color: rgb(91, 91, 243);color: black;border: black solid 1px;
+    background-color: rgb(91, 91, 243);color: black;border: black solid 1px;&:hover{scale: 1.05;};transition-duration: 1s;
     height:150px;padding: 1px;position: absolute;top:545px;left:1000px;position: sticky;
-    h4{font-size: nth($font-size,4);font-family: sans-serif;} }
+    h4{font-size: nth($font-size,4);font-family: sans-serif;}
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.75);}
         

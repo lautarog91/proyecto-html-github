@@ -60,8 +60,10 @@
       color: white;
       font-family: sans-serif;
       font-size: 20px; }
-    .titulo a img:hover {
-      scale: 1.1; }
+    .titulo a img {
+      transition-duration: 1s; }
+      .titulo a img:hover {
+        scale: 1.1; }
 
 .divs-centrados .subtitulo-fuerza, .divs-centrados .subtitulo-kick, .divs-centrados .subtitulo-recetas {
   display: flex;
@@ -93,6 +95,10 @@ body {
   .descripcion p {
     color: white;
     font-size: 20px; }
+  .descripcion img {
+    -webkit-box-shadow: 42px 7px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 42px 7px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 42px 7px 2px 0px rgba(0, 0, 0, 0.75); }
 
 .divs-centrados {
   display: flex;
@@ -102,7 +108,10 @@ body {
     width: 50%;
     background-color: white;
     margin: 10px;
-    border: 1px black solid; }
+    border: 1px black solid;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .divs-centrados .subtitulo-fuerza .h2yp {
       font-family: sans-serif;
       padding: 4px; }
@@ -111,15 +120,20 @@ body {
         margin: 1px; }
       .divs-centrados .subtitulo-fuerza .h2yp p {
         font-size: 18px; }
-    .divs-centrados .subtitulo-fuerza .img img {
-      border: 1px black solid; }
-    .divs-centrados .subtitulo-fuerza .img:hover {
-      scale: 1.1; }
+    .divs-centrados .subtitulo-fuerza .img {
+      transition-duration: 1.3s; }
+      .divs-centrados .subtitulo-fuerza .img img {
+        border: 1px black solid; }
+      .divs-centrados .subtitulo-fuerza .img:hover {
+        scale: 1.1; }
   .divs-centrados .subtitulo-kick {
     width: 50%;
     background-color: white;
     margin-bottom: 10px;
-    border: 1px black solid; }
+    border: 1px black solid;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .divs-centrados .subtitulo-kick .h2yp {
       padding: 4px;
       font-family: sans-serif; }
@@ -130,7 +144,8 @@ body {
         font-size: 18px; }
     .divs-centrados .subtitulo-kick .img {
       padding: 0px;
-      margin: 0px; }
+      margin: 0px;
+      transition-duration: 1.3s; }
       .divs-centrados .subtitulo-kick .img img {
         margin: 0px;
         border: 1px black solid; }
@@ -139,7 +154,10 @@ body {
   .divs-centrados .subtitulo-recetas {
     width: 50%;
     background-color: white;
-    border: 1px black solid; }
+    border: 1px black solid;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .divs-centrados .subtitulo-recetas .h2yp {
       padding: 4px;
       font-family: sans-serif; }
@@ -148,10 +166,12 @@ body {
         margin: 1px; }
       .divs-centrados .subtitulo-recetas .h2yp p {
         font-size: 18px; }
-    .divs-centrados .subtitulo-recetas .img img {
-      border: 1px black solid; }
-    .divs-centrados .subtitulo-recetas .img:hover {
-      scale: 1.1; }
+    .divs-centrados .subtitulo-recetas .img {
+      transition-duration: 1.3s; }
+      .divs-centrados .subtitulo-recetas .img img {
+        border: 1px black solid; }
+      .divs-centrados .subtitulo-recetas .img:hover {
+        scale: 1.1; }
 
 /* Pagina ejercicios */
 .cuerpo-grid-ejercicios {
@@ -160,16 +180,21 @@ body {
     background-color: white;
     color: black;
     font-family: sans-serif;
-    font-size: 33px;
     border: 1px solid black;
     padding: 2px;
     margin-bottom: 10px; }
+    .cuerpo-grid-ejercicios .subtitulo h2 {
+      font-size: 33px; }
   .cuerpo-grid-ejercicios div {
     background-color: white;
     color: black;
     border: 1px solid black;
+    margin-bottom: 10px;
     padding: 5px;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .cuerpo-grid-ejercicios div h3 {
       margin-bottom: 20px;
       font-family: sans-serif;
@@ -177,10 +202,17 @@ body {
     .cuerpo-grid-ejercicios div p {
       margin-top: 50px;
       margin-bottom: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
       font-family: sans-serif;
-      font-size: 20px; }
+      font-size: 20px;
+      transition-duration: 1.5s; }
       .cuerpo-grid-ejercicios div p:hover {
-        scale: 1.1; }
+        scale: 1.04; }
+    .cuerpo-grid-ejercicios div iframe {
+      -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
   .cuerpo-grid-ejercicios .ultimo-div {
     background-color: white;
     color: black;
@@ -188,7 +220,10 @@ body {
     font-size: 20px;
     border: 1px solid black;
     margin-bottom: 0px;
-    padding: 5px; }
+    padding: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .cuerpo-grid-ejercicios .ultimo-div h3 {
       margin-bottom: 20px;
       font-family: sans-serif;
@@ -196,13 +231,16 @@ body {
     .cuerpo-grid-ejercicios .ultimo-div p {
       margin-top: 50px;
       margin-bottom: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
       font-family: sans-serif;
       font-size: 20px; }
       .cuerpo-grid-ejercicios .ultimo-div p:hover {
-        scale: 1.1; }
+        scale: 1.04; }
 
 .aside-grid-ejercicios {
   grid-area: aside;
+  transition-duration: 1s;
   background-color: #5b5bf3;
   color: black;
   border: black solid 1px;
@@ -211,7 +249,12 @@ body {
   position: absolute;
   top: 544px;
   left: 1000px;
-  position: sticky; }
+  position: sticky;
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75); }
+  .aside-grid-ejercicios:hover {
+    scale: 1.05; }
   .aside-grid-ejercicios h4 {
     font-size: 20px;
     font-family: sans-serif; }
@@ -235,13 +278,24 @@ body {
   border: 1px solid black;
   margin-bottom: 10px;
   font-family: sans-serif;
-  padding: 5px; }
+  padding: 5px;
+  -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: 16px; }
   .recetas div h3 {
     font-size: 30px; }
   .recetas div img {
-    margin-bottom: 5px; }
-  .recetas div p:hover {
-    scale: 1.1; }
+    margin-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
+  .recetas div p {
+    transition-duration: 1.5s;
+    margin-left: 15px;
+    margin-right: 15px; }
+    .recetas div p:hover {
+      scale: 1.04; }
 
 .recetas .ultimo-div {
   margin-bottom: 0px;
@@ -250,8 +304,10 @@ body {
     font-size: 30px; }
   .recetas .ultimo-div img {
     margin-bottom: 5px; }
-  .recetas .ultimo-div p:hover {
-    scale: 1.1; }
+  .recetas .ultimo-div p {
+    transition-duration: 1.5s; }
+    .recetas .ultimo-div p:hover {
+      scale: 1.04; }
 
 /* Pagina contacto*/
 .formularios .subtitulo {
@@ -276,14 +332,20 @@ body {
   padding-left: 5px;
   padding-bottom: 1px;
   margin-bottom: 0px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
   .formularios div h2 {
     font-size: 20px;
     font-family: sans-serif;
     margin-top: 5px; }
   .formularios div textarea {
     width: 55%;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .formularios div textarea:focus {
       scale: 1.01; }
   .formularios div form {
@@ -303,7 +365,10 @@ body {
   .formularios .mapa h2 {
     font-size: 30px; }
   .formularios .mapa iframe {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /* Pagina kick-boxing*/
 .combinaciones {
@@ -321,12 +386,26 @@ body {
     background-color: white;
     color: black;
     border: 1px solid black;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-family: sans-serif;
     padding: 5px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75); }
     .combinaciones div h3 {
       font-size: 30px; }
+    .combinaciones div ul {
+      transition-duration: 1.5s;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .combinaciones div ul:hover {
+        scale: 1.06; }
+    .combinaciones div iframe {
+      -webkit-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 12px 4px 5px 0px rgba(0, 0, 0, 0.75);
+      margin-bottom: 15px; }
   .combinaciones .ultimo-div {
     margin-bottom: 0px;
     padding-left: 5px;
@@ -339,12 +418,18 @@ body {
   background-color: #5b5bf3;
   color: black;
   border: black solid 1px;
+  transition-duration: 1s;
   height: 150px;
   padding: 1px;
   position: absolute;
   top: 545px;
   left: 1000px;
-  position: sticky; }
+  position: sticky;
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.75); }
+  .aside-kick:hover {
+    scale: 1.05; }
   .aside-kick h4 {
     font-size: 20px;
     font-family: sans-serif; }
@@ -366,9 +451,25 @@ body {
     .pie a p {
       color: white;
       margin-top: 14px;
-      text-decoration: none; }
+      text-decoration: none;
+      transition-duration: 1s; }
       .pie a p:hover {
-        scale: 1.2; }
+        scale: 1.3; }
+
+.divs-centrados .subtitulo-fuerza, .divs-centrados .subtitulo-kick, .divs-centrados .subtitulo-recetas {
+  display: flex;
+  justify-content: space-between; }
+
+.divs-centrados .subtitulo-fuerza .h2yp, .divs-centrados .subtitulo-kick .h2yp, .divs-centrados .subtitulo-recetas .h2yp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.cuerpo-grid-ejercicios .subtitulo, .cuerpo-grid-ejercicios div, .cuerpo-grid-ejercicios .ultimo-div, .recetas, .recetas div, .recetas .ultimo-div, .formularios, .formularios div, .formularios div form, .formularios .mapa, .combinaciones .subtitulo, .combinaciones div, .combinaciones .ultimo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /*Pagina ejercicios*/
 @media screen and (max-width: 1470px) {
@@ -382,20 +483,16 @@ body {
     .cuerpo-grid-ejercicios .subtitulo h2 {
       font-size: 30px; }
   .cuerpo-grid-ejercicios div {
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    padding: 3px; }
     .cuerpo-grid-ejercicios div h3 {
       margin-bottom: 15px;
       font-family: sans-serif;
-      font-size: 20px; }
+      font-size: 25px; }
     .cuerpo-grid-ejercicios div p {
       margin-top: 40px;
       margin-bottom: 8px;
       font-size: 18px; }
-    .cuerpo-grid-ejercicios div video {
+    .cuerpo-grid-ejercicios div iframe {
       width: 700px;
       height: 400px; }
   .cuerpo-grid-ejercicios .ultimo-div h3 {
@@ -407,7 +504,7 @@ body {
     margin-bottom: 8px;
     font-family: sans-serif;
     font-size: 18px; }
-  .cuerpo-grid-ejercicios .ultimo-div video {
+  .cuerpo-grid-ejercicios .ultimo-div iframe {
     width: 700px;
     height: 400px; }
   .aside-grid-ejercicios {
@@ -431,7 +528,7 @@ body {
     .aside-grid-ejercicios h4 {
       font-size: 14px; } }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1095px) {
   .titulo {
     padding-left: 16px;
     padding-top: 10px;
@@ -444,7 +541,7 @@ body {
   .cuerpo-grid-ejercicios .subtitulo {
     padding: 2px; }
     .cuerpo-grid-ejercicios .subtitulo h2 {
-      font-size: 20px; }
+      font-size: 25px; }
   .cuerpo-grid-ejercicios div h3 {
     margin-bottom: 11px;
     font-family: sans-serif;
@@ -453,7 +550,7 @@ body {
     margin-top: 30px;
     margin-bottom: 6px;
     font-size: 18px; }
-  .cuerpo-grid-ejercicios div video {
+  .cuerpo-grid-ejercicios div iframe {
     width: 600px;
     height: 300px; }
   .cuerpo-grid-ejercicios .ultimo-div h3 {
@@ -463,7 +560,7 @@ body {
     margin-top: 30px;
     margin-bottom: 6px;
     font-size: 18px; }
-  .cuerpo-grid-ejercicios .ultimo-div video {
+  .cuerpo-grid-ejercicios .ultimo-div iframe {
     width: 600px;
     height: 300px; }
   .aside-grid-ejercicios {
@@ -479,7 +576,7 @@ body {
   .cuerpo-grid-ejercicios .subtitulo {
     padding: 2px; }
     .cuerpo-grid-ejercicios .subtitulo h2 {
-      font-size: 20px; }
+      font-size: 25px; }
   .cuerpo-grid-ejercicios div h3 {
     margin-bottom: 11px;
     font-family: sans-serif;
@@ -488,7 +585,7 @@ body {
     margin-top: 20px;
     margin-bottom: 6px;
     font-size: 16px; }
-  .cuerpo-grid-ejercicios div video {
+  .cuerpo-grid-ejercicios div iframe {
     width: 500px;
     height: 250px; }
   .cuerpo-grid-ejercicios .ultimo-div h3 {
@@ -498,7 +595,7 @@ body {
     margin-top: 20px;
     margin-bottom: 6px;
     font-size: 16px; }
-  .cuerpo-grid-ejercicios .ultimo-div video {
+  .cuerpo-grid-ejercicios .ultimo-div iframe {
     width: 500px;
     height: 250px; }
   .aside-grid-ejercicios {
@@ -521,8 +618,8 @@ body {
   .cuerpo-grid-ejercicios div p {
     margin-top: 18px;
     margin-bottom: 5px;
-    font-size: 12px; }
-  .cuerpo-grid-ejercicios div video {
+    font-size: 14px; }
+  .cuerpo-grid-ejercicios div iframe {
     width: 400px;
     height: 200px; }
   .cuerpo-grid-ejercicios .ultimo-div h3 {
@@ -531,8 +628,8 @@ body {
   .cuerpo-grid-ejercicios .ultimo-div p {
     margin-top: 18px;
     margin-bottom: 5px;
-    font-size: 12px; }
-  .cuerpo-grid-ejercicios .ultimo-div video {
+    font-size: 14px; }
+  .cuerpo-grid-ejercicios .ultimo-div iframe {
     width: 400px;
     height: 200px; }
   .aside-grid-ejercicios {
@@ -570,29 +667,26 @@ body {
     .cuerpo-grid-ejercicios .subtitulo {
       padding: 1px; }
       .cuerpo-grid-ejercicios .subtitulo h2 {
-        font-size: 20px; }
+        font-size: 25px; }
     .cuerpo-grid-ejercicios div {
       background-color: white;
       color: black;
       border: 1px solid black;
       padding: 5px;
       font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center; }
       .cuerpo-grid-ejercicios div h3 {
         font-size: 18px; }
       .cuerpo-grid-ejercicios div p {
         font-size: 12px; }
-      .cuerpo-grid-ejercicios div video {
+      .cuerpo-grid-ejercicios div iframe {
         width: 425px;
         height: 200px; }
     .cuerpo-grid-ejercicios .ultimo-div h3 {
       font-size: 18px; }
     .cuerpo-grid-ejercicios .ultimo-div p {
       font-size: 12px; }
-    .cuerpo-grid-ejercicios .ultimo-div video {
+    .cuerpo-grid-ejercicios .ultimo-div iframe {
       width: 425px;
       height: 200px; }
   .aside-grid-ejercicios {
@@ -600,6 +694,8 @@ body {
     height: 55px; }
     .aside-grid-ejercicios h4 {
       font-size: 14px; }
+    .aside-grid-ejercicios:hover {
+      scale: 1; }
   .pie a img {
     width: 40px;
     height: 40px; }
@@ -611,14 +707,14 @@ body {
     font-size: 16px; }
   .cuerpo-grid-ejercicios div p {
     font-size: 10px; }
-  .cuerpo-grid-ejercicios div video {
+  .cuerpo-grid-ejercicios div iframe {
     width: 300px;
     height: 170px; }
   .cuerpo-grid-ejercicios .ultimo-div h3 {
     font-size: 16px; }
   .cuerpo-grid-ejercicios .ultimo-div p {
     font-size: 10px; }
-  .cuerpo-grid-ejercicios .ultimo-div video {
+  .cuerpo-grid-ejercicios .ultimo-div iframe {
     width: 300px;
     height: 170px; }
   .cuerpo-grid-ejercicios .subtitulo h2 {
@@ -627,6 +723,10 @@ body {
     font-size: 12px; }
   .cuerpo {
     margin: 0px; } }
+
+@media screen and (max-width: 345px) {
+  .aside-grid-ejercicios h4 {
+    font-size: 10px; } }
 
 /*Pagina index*/
 @media screen and (max-width: 1090px) {
@@ -709,12 +809,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 470px; }
+    height: 560px; }
     .descripcion img {
-      width: 325px;
-      height: 250px; }
+      width: 400px;
+      height: 280px; }
     .descripcion p {
-      font-size: 12px; } }
+      font-size: 16px; } }
 
 @media screen and (max-width: 550px) {
   .divs-centrados .subtitulo-fuerza .h2yp h2 {
@@ -723,6 +823,15 @@ body {
     font-size: 10px; }
   .divs-centrados .subtitulo-recetas .h2yp h2 {
     font-size: 10px; } }
+
+@media screen and (max-width: 450px) {
+  .descripcion {
+    height: 450px; }
+    .descripcion p {
+      font-size: 12px; }
+    .descripcion img {
+      width: 300px;
+      height: 200px; } }
 
 @media screen and (max-width: 370px) {
   .divs-centrados .subtitulo-fuerza .img img {
@@ -738,11 +847,17 @@ body {
 /*Pagina recetas*/
 @media screen and (max-width: 1250px) {
   .recetas div p {
-    font-size: 16px; }
+    font-size: 14px; }
+  .recetas div h3 {
+    font-size: 25px; }
   .recetas .ultimo-div p {
-    font-size: 16px; } }
+    font-size: 14px; }
+  .recetas .ultimo-div h3 {
+    font-size: 25px; }
+  .recetas .subtitulo h2 {
+    font-size: 30px; } }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1084px) {
   .recetas div img {
     width: 500px;
     height: 300px; }
@@ -754,7 +869,7 @@ body {
   .recetas .ultimo-div p {
     font-size: 12px; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .recetas .subtitulo h2 {
     font-size: 30px; }
   .recetas div h3 {
@@ -762,46 +877,58 @@ body {
   .recetas div img {
     width: 400px;
     height: 200px; }
+  .recetas div p {
+    font-size: 10px; }
   .recetas .ultimo-div h3 {
     font-size: 20px; }
   .recetas .ultimo-div img {
     width: 400px;
-    height: 200px; } }
+    height: 200px; }
+  .recetas .ultimo-div p {
+    font-size: 10px; } }
 
-@media screen and (max-width: 600px) {
-  .recetas .subtitulo h2 {
-    font-size: 20px; }
-  .recetas div h3 {
-    font-size: 33px, 32px, 30px, 20px, 18px, 16px, 14px, 12px, 10px, 5; }
-  .recetas div p {
-    font-size: 10px; }
-  .recetas div img {
-    width: 300px;
-    height: 140px; }
+@media screen and (max-width: 800px) {
+  .recetas .subtitulo {
+    width: 90%; }
+    .recetas .subtitulo h2 {
+      font-size: 20px; }
+  .recetas div {
+    width: 90%; }
+    .recetas div h3 {
+      font-size: 33px, 32px, 30px, 20px, 18px, 16px, 14px, 12px, 10px, 9px, 25px, 5; }
+    .recetas div img {
+      width: 400px;
+      height: 200px; }
   .recetas .ultimo-div div h3 {
     font-size: 18px; }
-  .recetas .ultimo-div p {
-    font-size: 10px; }
   .recetas .ultimo-div img {
-    width: 300px;
-    height: 140px; }
+    width: 400px;
+    height: 200px; }
   .pie a img {
     width: 30px;
     height: 30px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 620px) {
   .recetas .subtitulo {
-    width: 80%; }
+    width: 100%; }
   .recetas div {
-    width: 80%; }
+    width: 100%; }
     .recetas div img {
-      width: 200px;
-      height: 105px; }
+      width: 400px;
+      height: 200px; }
   .recetas .ultimo-div {
-    width: 80%; }
+    width: 100%; }
     .recetas .ultimo-div img {
-      width: 200px;
-      height: 105px; } }
+      width: 400px;
+      height: 200px; } }
+
+@media screen and (max-width: 430px) {
+  .recetas div img {
+    width: 300px;
+    height: 160px; }
+  .recetas .ultimo-div img {
+    width: 300px;
+    height: 160px; } }
 
 /*Pagina contacto */
 @media screen and (max-width: 1000px) {
@@ -859,16 +986,16 @@ body {
   .combinaciones .subtitulo h2 {
     font-size: 30px; }
   .combinaciones div h3 {
-    font-size: 20px; }
+    font-size: 25px; }
   .combinaciones div p {
     font-size: 18px; }
   .combinaciones div ul li {
     font-size: 14px; }
-  .combinaciones div video {
+  .combinaciones div iframe {
     width: 500px;
     height: 300px; }
   .combinaciones .ultimo-div h3 {
-    font-size: 20px; }
+    font-size: 25px; }
   .combinaciones .ultimo-div p {
     font-size: 18px; }
   .aside-kick {
@@ -878,7 +1005,6 @@ body {
 
 @media screen and (max-width: 1120px) {
   .aside-kick {
-    height: 125px;
     height: 108px; }
     .aside-kick h4 {
       font-size: 14px; } }
@@ -892,13 +1018,17 @@ body {
     font-size: 16px; }
   .combinaciones div ul li {
     font-size: 12px; }
-  .combinaciones div video {
+  .combinaciones div iframe {
     width: 500px;
     height: 300px; }
   .combinaciones .ultimo-div h3 {
     font-size: 18px; }
   .combinaciones .ultimo-div p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .aside-kick {
+    height: 110px; }
+    .aside-kick h4 {
+      font-size: 12px; } }
 
 @media screen and (max-width: 850px) {
   .combinaciones .subtitulo h2 {
@@ -909,17 +1039,13 @@ body {
     font-size: 16px; }
   .combinaciones div ul li {
     font-size: 10px; }
-  .combinaciones div video {
+  .combinaciones div iframe {
     width: 300px;
     height: 150px; }
   .combinaciones .ultimo-div h3 {
     font-size: 16px; }
   .combinaciones .ultimo-div p {
-    font-size: 16px; }
-  .aside-kick {
-    height: 110px; }
-    .aside-kick h4 {
-      font-size: 12px; } }
+    font-size: 16px; } }
 
 @media screen and (max-width: 730px) {
   .grid-kick {
@@ -935,19 +1061,21 @@ body {
       font-size: 18px; }
     .combinaciones div ul li {
       font-size: 12px; }
-    .combinaciones div video {
+    .combinaciones div iframe {
       width: 400px;
       height: 200px; }
     .combinaciones .ultimo-div h3 {
       font-size: 18px; }
-    .combinaciones .ultimo-div video {
+    .combinaciones .ultimo-div iframe {
       width: 400px;
       height: 200px; }
   .aside-kick {
     grid-area: aside-kick;
     height: 70px; }
     .aside-kick h4 {
-      font-size: 14px; } }
+      font-size: 14px; }
+    .aside-kick:hover {
+      scale: 1; } }
 
 @media screen and (max-width: 570px) {
   .combinaciones div ul li {
@@ -964,10 +1092,10 @@ body {
     font-size: 14px; }
   .combinaciones div p {
     font-size: 14px; }
-  .combinaciones div video {
+  .combinaciones div iframe {
     width: 300px;
     height: 200px; }
-  .combinaciones .ultimo-div video {
+  .combinaciones .ultimo-div iframe {
     width: 300px;
     height: 200px; }
   .combinaciones .ultimo-div h3 {

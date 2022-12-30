@@ -1,3 +1,4 @@
+@import "../base/variables";
 /*Pagina ejercicios*/
 @media screen and (max-width:1470px){
 
@@ -5,11 +6,11 @@
     a {h1{font-size: nth($font-size,5);}}}
 
     .cuerpo-grid-ejercicios{.subtitulo {h2{font-size: nth($font-size,3);}padding: 2px;}; 
-    div{padding: 3px;display: flex;flex-direction: column; justify-content:center;align-items: center; 
-    h3{margin-bottom: 15px;font-family: sans-serif;font-size: nth($font-size,4);}; 
+    div{padding: 3px;
+    h3{margin-bottom: 15px;font-family: sans-serif;font-size: nth($font-size,11);}; 
     p{margin-top:40px;margin-bottom: 8px;font-size:nth($font-size,5);}; 
-    video{width:700px;height:400px ;} }.ultimo-div{h3{margin-bottom: 15px;font-family: sans-serif;font-size: nth($font-size,4);}
-    p{margin-top:40px;margin-bottom: 8px;font-family: sans-serif;font-size: nth($font-size,5);}video{width: 700px;height: 400px;} } } 
+    iframe{width:700px;height:400px ;} }.ultimo-div{h3{margin-bottom: 15px;font-family: sans-serif;font-size: nth($font-size,4);}
+    p{margin-top:40px;margin-bottom: 8px;font-family: sans-serif;font-size: nth($font-size,5);}iframe{width: 700px;height: 400px;} } } 
         
     .aside-grid-ejercicios{height:80px;padding: 1px;position: absolute;top: 555px;left:1000px;position: sticky;h4{font-size: nth($font-size,6);} }
     }
@@ -19,25 +20,25 @@
             h4{font-size:nth($font-size,7);}}
         }
 
-    @media screen and (max-width:1055px){
+    @media screen and (max-width:1095px){
         .titulo{ padding-left: 16px;padding-top: 10px;height:110px ;a{h1{font-size: nth($font-size,7);}img{width:70px ;height: 70px;} }} 
 
-        .cuerpo-grid-ejercicios{ .subtitulo { h2{font-size: nth($font-size,4);};padding: 2px;}
+        .cuerpo-grid-ejercicios{ .subtitulo { h2{font-size: nth($font-size,11);};padding: 2px;}
         div{ h3{margin-bottom: 11px;font-family: sans-serif;font-size: nth($font-size,4);}
-        p{margin-top:30px;margin-bottom: 6px;font-size: nth($font-size,5);}video{width:600px;height:300px ;}}
+        p{margin-top:30px;margin-bottom: 6px;font-size: nth($font-size,5);}iframe{width:600px;height:300px ;}}
         .ultimo-div{h3{margin-bottom: 11px;font-size: nth($font-size,4);}
         p{margin-top: 30px;margin-bottom: 6px;font-size: nth($font-size,5);}
-        video{width: 600px;height: 300px;}   }}
+        iframe{width: 600px;height: 300px;}   }}
 
         .aside-grid-ejercicios{height:80px;padding: 1px;position: absolute;top: 560px;position: sticky;h4{font-size:nth($font-size,7);}}
         }
 
         @media screen and (max-width:940px){    
-            .cuerpo-grid-ejercicios{ .subtitulo {padding: 2px; h2{font-size: nth($font-size,4);} } 
+            .cuerpo-grid-ejercicios{ .subtitulo {padding: 2px; h2{font-size: nth($font-size,11);} } 
             div{h3{margin-bottom: 11px;font-family: sans-serif;font-size: nth($font-size,4);}
-            p{margin-top:20px;margin-bottom: 6px;font-size: nth($font-size,6);}video{width:500px;height:250px;} }
+            p{margin-top:20px;margin-bottom: 6px;font-size: nth($font-size,6);}iframe{width:500px;height:250px;} }
             .ultimo-div{h3{margin-bottom: 11px;font-size: nth($font-size,4);} p{margin-top: 20px;margin-bottom: 6px;font-size: nth($font-size,6);}
-            video{width: 500px;height: 250px;} }}
+            iframe{width: 500px;height: 250px;} }}
     
             .aside-grid-ejercicios{height: 85px;padding: 1px;position: absolute;top:560px;position: sticky;h4{font-size: nth($font-size,7);}}
 
@@ -46,9 +47,9 @@
 
         @media screen and (max-width:900px){
             .cuerpo-grid-ejercicios {div{h3{margin-bottom: 10px;font-family: sans-serif;font-size: nth($font-size,5);}
-            p{margin-top:18px;margin-bottom: 5px;font-size: nth($font-size,8);}video{width: 400px;height: 200px;} }
-            .ultimo-div{h3{margin-bottom: 10px;font-size: nth($font-size,5);}p{margin-top: 18px;margin-bottom: 5px;font-size: nth($font-size,8);}
-            video{width: 400px;height: 200px;} } }
+            p{margin-top:18px;margin-bottom: 5px;font-size: nth($font-size,7);}iframe{width: 400px;height: 200px;} }
+            .ultimo-div{h3{margin-bottom: 10px;font-size: nth($font-size,5);}p{margin-top: 18px;margin-bottom: 5px;font-size: nth($font-size,7);}
+            iframe{width: 400px;height: 200px;} } }
 
             .aside-grid-ejercicios{ height: 75px;h4{font-size: nth($font-size,8);} }
         }      
@@ -63,23 +64,26 @@
                 "cuerpo"
                 "aside"
                 ;}
-            .cuerpo-grid-ejercicios{grid-area: cuerpo;.subtitulo {padding: 1px;h2{font-size: nth($font-size,4);} }
+            .cuerpo-grid-ejercicios{grid-area: cuerpo;.subtitulo {padding: 1px;h2{font-size: nth($font-size,11);} }
             div{background-color: white;color: black;border:1px solid black;padding:5px;font-family: sans-serif;
-            display: flex;flex-direction: column; justify-content:center;align-items: center;h3{font-size: nth($font-size,5);}p{font-size: nth($font-size,8);}
-            video{width:425px ;height: 200px;}}.ultimo-div{h3{font-size: nth($font-size,5);}p{font-size:nth($font-size,8);}video{width: 425px;height: 200px;} } }
+            ;align-items: center;h3{font-size: nth($font-size,5);}p{font-size: nth($font-size,8);}
+            iframe{width:425px ;height: 200px;}}.ultimo-div{h3{font-size: nth($font-size,5);}p{font-size:nth($font-size,8);}iframe{width: 425px;height: 200px;} } }
             
-            .aside-grid-ejercicios{grid-area: aside;height: 55px;h4{font-size:nth($font-size,7) ;} }
+            .aside-grid-ejercicios{grid-area: aside;height: 55px;h4{font-size:nth($font-size,7) ;}&:hover{scale:1 ;} }
             .pie{a {img{width: 40px;height: 40px;}p{font-size: nth($font-size,7);}}}
             }
 
             @media screen and (max-width:450px){
                 .cuerpo-grid-ejercicios {div {h3{font-size: nth($font-size,6);}p {font-size: nth($font-size,9);}
-                video{width: 300px;height: 170px;}}
-                .ultimo-div {h3{font-size: nth($font-size,6);}p{font-size:nth($font-size,9);}video{width: 300px;height: 170px;}}
+                iframe{width: 300px;height: 170px;}}
+                .ultimo-div {h3{font-size: nth($font-size,6);}p{font-size:nth($font-size,9);}iframe{width: 300px;height: 170px;}}
             .subtitulo{h2{font-size:nth($font-size,5) ;}}}
 
                 .aside-grid-ejercicios{ h4{font-size:nth($font-size,8);}}
                 .cuerpo{margin: 0px;}  
+                }
+                @media screen and (max-width:345px){
+                    .aside-grid-ejercicios{ h4{font-size:nth($font-size,9);}}
                 }
 
 /*Pagina index*/
@@ -124,14 +128,17 @@
 
 
 @media screen and (max-width:660px){
-    .descripcion{display: flex;flex-direction: column;justify-content: center;align-items: center; height: 470px;
-    img{width:325px;height: 250px;}p{font-size: nth($font-size,8);}}}
+    .descripcion{display: flex;flex-direction: column;justify-content: center;align-items: center; height: 560px;
+    img{width:400px;height: 280px;}p{font-size: nth($font-size,6);}}}
     
 
 @media screen and (max-width:550px) {.divs-centrados{.subtitulo-fuerza{.h2yp{h2{ font-size: nth($font-size,9);} }}
     .subtitulo-kick { .h2yp{h2{font-size: nth($font-size,9);}}} .subtitulo-recetas{.h2yp{h2{font-size: nth($font-size,9);}}}}
         
     }
+    @media screen and (max-width:450px) {.descripcion{p{font-size: nth($font-size,8);}img{width:300px ;height:200px ;}
+height:450px ;}}
+
 @media screen and (max-width:370px){
 
     .divs-centrados {
@@ -142,31 +149,39 @@
 
 /*Pagina recetas*/
     @media screen and (max-width:1250px){
-        .recetas{ div{p{font-size: nth($font-size,6);}} .ultimo-div{p{font-size: nth($font-size,6);}}}
+        .recetas{ div{p{font-size: nth($font-size,7);}h3{font-size: nth($font-size,11);}} 
+        .ultimo-div{p{font-size: nth($font-size,7);}h3{font-size: nth($font-size,11);}}
+        .subtitulo{h2{font-size: nth($font-size,3);}}}
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:1084px){
 
     .recetas{div{img{width: 500px;height: 300px;}p{font-size: nth($font-size,8);}} 
     .ultimo-div{img{width: 500px;height: 300px;}p{font-size: nth($font-size,8);}}}
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:950px){
 .recetas{.subtitulo{h2{font-size:nth($font-size,3) ;}}
-div{h3{font-size:nth($font-size,4);} img{ width:400px ;height: 200px; }}
+div{h3{font-size:nth($font-size,4);} img{ width:400px ;height: 200px; }p{font-size: nth($font-size,9);}}
 
-.ultimo-div{h3{font-size:nth($font-size,4);} img{width: 400px;height: 200px;}}    }
-}
+.ultimo-div{h3{font-size:nth($font-size,4);} img{width: 400px;height: 200px;} p{font-size: nth($font-size,9);}} }    }
 
-@media screen and (max-width:600px){
-.recetas{.subtitulo{h2{font-size: nth($font-size,4);}} 
-div{h3{font-size:($font-size,5) ;} p{font-size: nth($font-size,9);}img{width: 300px;height:140px ;}}
-.ultimo-div{div{h3{font-size:nth($font-size,5) ;}} p{font-size:nth($font-size,9);}img{width: 300px; height: 140px;}}}
+
+@media screen and (max-width:800px){
+.recetas{.subtitulo{h2{font-size: nth($font-size,4);}width: 90%;} 
+div{h3{font-size:($font-size,5) ;} img{width: 400px;height:200px ;}width: 90%;}
+.ultimo-div{div{h3{font-size:nth($font-size,5) ;}} img{width: 400px; height: 200px;}}}
 
 .pie{a{img{width: 30px;height: 30px;}}}
 }
 
-@media screen and (max-width:500px) {
-.recetas{.subtitulo{width: 80%;}   div{width: 80% ;img{width: 200px;height:105px}}.ultimo-div{width: 80%;img{width: 200px;height: 105px;}}}
+@media screen and (max-width:620px) {
+.recetas{.subtitulo{width: 100%;}  div{width: 100% ;img{width: 400px;height:200px}}
+.ultimo-div{width: 100%;img{width: 400px;height: 200px;}}}
+}
+
+@media screen and (max-width:430px){
+.recetas{div{img{width: 300px;height: 160px;}}.ultimo-div{img{width: 300px;height: 160px;}}}
+
 }
 
 /*Pagina contacto */
@@ -195,31 +210,30 @@ div{h3{font-size:($font-size,5) ;} p{font-size: nth($font-size,9);}img{width: 30
 /* Pagina kick-boxing*/
 @media screen and (max-width:1400px)
 {.combinaciones{ .subtitulo{h2{font-size:nth($font-size,3) }};
-div{h3{font-size: nth($font-size,4)}p{font-size: nth($font-size,5)} ul{li{font-size:nth($font-size,7) }}video{width: 500px;height: 300px}};
-.ultimo-div{h3{font-size: nth($font-size,4);}p{font-size:nth($font-size,5) ;} }}
+div{h3{font-size: nth($font-size,11)}p{font-size: nth($font-size,5)} ul{li{font-size:nth($font-size,7) }}iframe{width: 500px;height: 300px}};
+.ultimo-div{h3{font-size: nth($font-size,11);}p{font-size:nth($font-size,5) ;} }}
 
 .aside-kick{height:125px  ;h4{font-size: nth($font-size,6);} }
 }
 
 @media screen and (max-width:1120px){
-    .aside-kick{height:125px;h4{font-size: nth($font-size,7);}height:108px ;}
+    .aside-kick{h4{font-size: nth($font-size,7);}height:108px ;}
 
 }
 @media screen and (max-width:980px){
     .combinaciones{ .subtitulo{h2{font-size:nth($font-size,4) }};
     div{h3{font-size: nth($font-size,5)}p{font-size: nth($font-size,6)} 
-    ul{li{font-size:nth($font-size,8) }}video{width: 500px;height: 300px}};
+    ul{li{font-size:nth($font-size,8) }}iframe{width: 500px;height: 300px}};
     .ultimo-div{h3{font-size: nth($font-size,5);}p{font-size:nth($font-size,6) ;} }}
+    .aside-kick{height:110px  ;h4{font-size: nth($font-size,8);}}
     }
 
 @media screen and (max-width:850px){
     .combinaciones{ .subtitulo{h2{font-size:nth($font-size,5) }};
     div{h3{font-size: nth($font-size,6)}p{font-size: nth($font-size,6)} ul{li{font-size:nth($font-size,9) }}
-    video{width: 300px;height: 150px}};
+    iframe{width: 300px;height: 150px}};
     .ultimo-div{h3{font-size: nth($font-size,6);}p{font-size:nth($font-size,6) ;} }}
-    
-    .aside-kick{height:110px  ;h4{font-size: nth($font-size,8);}}
-}
+    }
 
 @media screen and (max-width:730px){.grid-kick{display: grid;grid-template-columns: 1fr;grid-template-rows: auto auto;
     grid-template-areas:
@@ -227,10 +241,10 @@ div{h3{font-size: nth($font-size,4)}p{font-size: nth($font-size,5)} ul{li{font-s
     "aside-kick";}
     
 .combinaciones{grid-area: combinaciones;.subtitulo{h2 {font-size:nth($font-size,4) ;}}
-div{h3{font-size: nth($font-size,5);}ul{li{font-size: nth($font-size,8);}}video{width:400px;height: 200px ;}}
-.ultimo-div{h3{font-size: nth($font-size,5);}video{width:400px;height: 200px ;} }}
+div{h3{font-size: nth($font-size,5);}ul{li{font-size: nth($font-size,8);}}iframe{width:400px;height: 200px ;}}
+.ultimo-div{h3{font-size: nth($font-size,5);}iframe{width:400px;height: 200px ;} }}
 
-.aside-kick{grid-area: aside-kick; height:70px ;h4{font-size: nth($font-size,7);}}  
+.aside-kick{grid-area: aside-kick; height:70px ;h4{font-size: nth($font-size,7);} &:hover{scale: 1;}}  
 }
 
 @media screen and (max-width:570px){
@@ -241,7 +255,7 @@ div{h3{font-size: nth($font-size,5);}ul{li{font-size: nth($font-size,8);}}video{
 
 @media screen and (max-width:440px){
 .combinaciones{.subtitulo {h2{font-size:nth($font-size,6) ;}}div{h3{font-size: nth($font-size,7);};p{font-size:nth($font-size,7) ;} 
-video{width:300px ;height: 200px;}}.ultimo-div{video{width: 300px;height: 200px;}h3{font-size: nth($font-size,7);};p{font-size:nth($font-size,7) ;} }  }
+iframe{width:300px ;height: 200px;}}.ultimo-div{iframe{width: 300px;height: 200px;}h3{font-size: nth($font-size,7);};p{font-size:nth($font-size,7) ;} }  }
 .aside-kick{h4{font-size:nth($font-size,9) ;}}
 
 }
