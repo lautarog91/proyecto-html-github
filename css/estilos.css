@@ -83,6 +83,7 @@
 body {
   background-color: #b9b9ff; }
   body nav {
+    padding-left: 150px;
     background-color: #5b5bf3;
     border-bottom: 1px solid black;
     margin-bottom: 0px; }
@@ -482,6 +483,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+@media screen and (max-width: 992px) {
+  body nav {
+    padding-left: 15px; }
+    body nav div img {
+      display: none; } }
 
 /*Pagina ejercicios*/
 @media screen and (max-width: 1470px) {
