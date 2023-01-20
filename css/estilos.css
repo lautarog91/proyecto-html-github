@@ -82,6 +82,10 @@
 
 body {
   background-color: #b9b9ff; }
+  body nav {
+    background-color: #5b5bf3;
+    border-bottom: 1px solid black;
+    margin-bottom: 0px; }
 
 /* Pagina index*/
 .descripcion {
@@ -180,7 +184,9 @@ body {
     background-color: white;
     color: black;
     font-family: sans-serif;
-    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     padding: 2px;
     margin-bottom: 10px; }
     .cuerpo-grid-ejercicios .subtitulo h2 {
@@ -264,7 +270,9 @@ body {
   background-color: white;
   color: black;
   width: 70%;
-  border: 1px solid black;
+  border-top: 0px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
   margin-bottom: 10px;
   text-align: center; }
   .recetas .subtitulo h2 {
@@ -318,7 +326,9 @@ body {
   align-items: center;
   color: black;
   width: 70%;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 0px;
   margin-bottom: 10px; }
   .formularios .subtitulo h2 {
     font-size: 33px;
@@ -376,7 +386,9 @@ body {
   .combinaciones .subtitulo {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 0px;
+    border-bottom: 1px solid black;
     margin-bottom: 10px;
     padding-left: 5px; }
     .combinaciones .subtitulo h2 {
